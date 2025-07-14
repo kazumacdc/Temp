@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Amor da Minha Vida</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .love-message-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: #3a3a3a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .heart-container {
+            flex: 1 1 400px;
+            min-width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+            background-color: #4a4a4a; /* Cor de fundo para o quadrado do coração */
+            border-radius: 8px;
+            overflow: hidden; /* Garante que o coração não saia do limite */
+        }
+
+        /* O elemento que realmente desenha a forma do coração */
+        .heart {
+            width: 90px; /* Largura base do "quadrado" do coração - DIMINUÍDO */
+            height: 90px; /* Altura base do "quadrado" do coração - DIMINUÍDO */
+            background-color: #f06292; /* Cor rosa do coração */
+            position: relative;
+            transform: rotate(-45deg); /* Rotaciona o elemento base para formar a ponta inferior */
+            box-shadow: 0 0 15px rgba(240, 98, 146, 0.7);
+            display: flex; /* Para centralizar o conteúdo */
+            justify-content: center; /* Para centralizar o conteúdo */
+            align-items: center; /* Para centralizar o conteúdo */
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 100%; /* Largura dos círculos */
+            height: 100%; /* Altura dos círculos */
+            background-color: #f06292; /* Mesma cor rosa do coração */
+            border-radius: 50%; /* Fazem os elementos serem círculos */
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -50%; /* Posiciona o círculo superior */
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 50%; /* Posiciona o círculo da direita */
+        }
+
+        /* Conteúdo dentro do coração */
+        .heart-content {
+            position: relative; /* Ajuste para o z-index */
+            z-index: 2; /* Garante que o texto fique acima do coração */
+            transform: rotate(45deg); /* Contra-rotaciona o texto para ficar reto */
+            text-align: center;
+            color: #fff;
+            font-size: 0.7em; /* Tamanho da fonte DIMINUÍDO */
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px; /* Espaçamento interno para o texto - DIMINUÍDO */
+            box-sizing: border-box; /* Inclui padding na largura/altura */
+        }
+
+        #countdown {
+            font-size: 0.8em; /* Tamanho da fonte da contagem regressiva DIMINUÍDO */
+            opacity: 0.9;
+        }
+
+        #love-pre-message, #love-post-message {
+            font-size: 0.85em; /* Tamanho da fonte das mensagens antes e depois DIMINUÍDO */
+        }
+
+        .love-acrostic {
+            flex: 1 1 400px;
+            min-width: 300px;
+            background-color: #4a4a4a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .love-acrostic h3 {
+            color: #FFD700;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .love-acrostic p {
+            margin-bottom: 10px;
+        }
+
+        .love-acrostic p strong {
+            color: #87CEEB;
+        }
+
+        .love-acrostic pre {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="love-message-box">
+            <div class="heart-container">
+                <div class="heart">
+                    <div class="heart-content">
+                        <span id="love-pre-message"> A </span><br>
+                        <span id="countdown">Carregando...</span><br>
+                        <span id="love-post-message">EU AMO VOCÊ!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="love-acrostic">
+                <h3>PARA O AMOR DA MINHA VIDA:</h3>
+                <p>
+             <strong>VOCE É  A LUZ QUE ILUMINA MEU CAMINHO</strong><br>
+             <strong> A PESSOA QUE TORNA A VIDA MAIS BELA</strong><br>
+               <strong> DESEJO SSMPRE ESTA AO SEU LADO</strong><br>
+                   <strong>SAIBA QUE EU SEMPRE IREI</strong><br>
+                         <strong> AMAR VOÇE</strong>
+                </p>
+                   
+                <P>        
+                    
+                    
+                    
+                    
+ 
+                </p>                    
+                                                            
+                                  <p> <strong>𝓥  𝓜</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const countdownElement = document.getElementById('countdown');
+
+            // ATENÇÃO: A DATA DE INÍCIO FOI DEFINIDA PARA 15 DE FEVEREIRO DE 2025 ÀS 00:00:00
+            // Meses em JavaScript são baseados em zero (0 para Janeiro, 1 para Fevereiro, etc.)
+            // Então, Fevereiro é representado por 1.
+            const startDate = new Date(2025, 1, 15, 0, 0, 0); // Ano, Mês (0-11), Dia, Hora, Minuto, Segundo
+
+            function updateCountdown() {
+                const now = new Date();
+                const diff = now.getTime() - startDate.getTime(); // Diferença em milissegundos
+
+                // Se a data de início (startDate) for no futuro em relação à data atual (now),
+                // isso significa que o evento ainda não começou, então mostramos uma contagem regressiva para ele.
+                if (diff < 0) {
+                    const absDiff = Math.abs(diff); // Diferença absoluta para contagem regressiva
+                    const daysRemaining = Math.floor(absDiff / (1000 * 60 * 60 * 24));
+                    const hoursRemaining = Math.floor((absDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutesRemaining = Math.floor((absDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const secondsRemaining = Math.floor((absDiff % (1000 * 60)) / 1000);
+
+                    countdownElement.textContent =
+                        `O evento começará em: ${daysRemaining} dias ${hoursRemaining} horas ${minutesRemaining} minutos ${secondsRemaining} segundos`;
+                    return; // Sai da função para não calcular o tempo decorrido
+                }
+
+                // Se a data de início já passou (diff >= 0), calculamos o tempo decorrido
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                countdownElement.textContent =
+                    `${days} dias ${hours} horas ${minutes} minutos ${seconds} segundos`;
+            }
+
+            // Chama a função de contagem regressiva a cada segundo
+            setInterval(updateCountdown, 1000);
+
+            // Chama a função uma vez ao carregar para evitar atraso inicial
+            updateCountdown();
+        });
+    </script>
+</body>
+</html>
